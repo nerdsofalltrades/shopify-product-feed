@@ -23,3 +23,7 @@ Their system accepts a CSV which one get via:
 ```
 $ curl http://localhost:3000/shopfiy-product-feed/sugartrends?key=shopify-app-key&secret=shopify-app-secret&store=shopify-store
 ```
+
+or try it live at:
+
+https://nerdsofalltrad.es/shopify-product-feed/sugartrends
