@@ -57,7 +57,7 @@ const transpile = source => {
             manufacturer: product.vendor,
             // eslint-disable-next-line camelcase
             attribute_set: 'General (use for bulk import products)',
-            prodtype: hasVariants ? 'configurable' : 'simple',
+            prodtype: 'simple',
             visibility: 'Catalog, Search',
             // eslint-disable-next-line camelcase
             tax_class_id: 'None',
@@ -118,11 +118,7 @@ module.exports = (req, res) => {
           };
         }
         res.setHeader('Content-Type', 'text/csv; charset=utf-8');
-        return `# Product feed from ${
-          params.store
-        }.myshopify.com for sugartrends.com exported ${new Date().toISOString()}\n${transpile(
-          data
-        )}`;
+        return transpile(data);
       })
       .catch(err => {
         return {
