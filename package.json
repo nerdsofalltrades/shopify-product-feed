@@ -44,10 +44,10 @@
   "dependencies": {
     "micro": "^9.0.0",
     "micro-ratelimit": "^0.3.0",
-    "node-fetch": "^1.7.3"
+    "node-fetch": "^2.0.0"
   },
   "devDependencies": {
-    "eslint-config-xo-react": "^0.13.0",
+    "eslint-config-xo-react": "^0.16.0",
     "eslint-plugin-flowtype": "^2.39.1",
     "eslint-plugin-react": "^7.4.0",
     "xo": "^0.18.2"
