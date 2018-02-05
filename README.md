@@ -1,5 +1,7 @@
 # Shopify product feed for 3rd party systems
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nerdsofalltrades/shopify-product-feed.svg)](https://greenkeeper.io/)
+
 Microservice to export product data from a Shopify shop to 3rd party systems
 
 ## Start
