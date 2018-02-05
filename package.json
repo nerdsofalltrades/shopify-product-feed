@@ -6,14 +6,10 @@
   "scripts": {
     "test": "xo",
     "start": "micro -p ${PORT:-3000}",
-    "deploy":
-      "npm test && npm run deploy:sync && npm run deploy:setup && npm run deploy:golive",
-    "deploy:sync":
-      "rsync -az --exclude '.git*' --no-owner --no-group --delete -e 'ssh -o StrictHostKeyChecking=no' ./ nerdsofalltrad.es:~nerdsofalltrad-es/shopify-product-feed/",
-    "deploy:setup":
-      "ssh nerdsofalltrad.es 'npm install --prefix ~nerdsofalltrad-es/shopify-product-feed --only=production'",
-    "deploy:golive":
-      "ssh nerdsofalltrad.es 'systemctl restart shopify-product-feed.nerdsofalltrad.es.service'"
+    "deploy": "npm test && npm run deploy:sync && npm run deploy:setup && npm run deploy:golive",
+    "deploy:sync": "rsync -az --exclude '.git*' --no-owner --no-group --delete -e 'ssh -o StrictHostKeyChecking=no' ./ nerdsofalltrad.es:~nerdsofalltrad-es/shopify-product-feed/",
+    "deploy:setup": "ssh nerdsofalltrad.es 'npm install --prefix ~nerdsofalltrad-es/shopify-product-feed --only=production'",
+    "deploy:golive": "ssh nerdsofalltrad.es 'systemctl restart shopify-product-feed.nerdsofalltrad.es.service'"
   },
   "prettier": {
     "singleQuote": true
@@ -22,7 +18,9 @@
     "extends": "xo-react",
     "esnext": true,
     "space": true,
-    "env": ["node"],
+    "env": [
+      "node"
+    ],
     "rules": {
       "new-cap": 0,
       "complexity": 0,
