@@ -1,5 +1,6 @@
 # Shopify product feed for 3rd party systems
 
+[![Build Status](https://api.travis-ci.org/nerdsofalltrades/shopify-product-feed.svg?branch=master)](https://travis-ci.org/nerdsofalltrades/shopify-product-feed)
 [![Greenkeeper badge](https://badges.greenkeeper.io/nerdsofalltrades/shopify-product-feed.svg)](https://greenkeeper.io/)
 
 Microservice to export product data from a Shopify shop to 3rd party systems
