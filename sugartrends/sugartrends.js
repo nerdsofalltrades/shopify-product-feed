@@ -35,16 +35,19 @@ module.exports = (source = { products: [] }) => {
 
         product.variants.forEach(variant => {
           const categories = product.tags
-            ? product.tags
+            ? /* eslint-disable indent */
+              product.tags
                 .split(/, /)
                 .filter(tag => tag.indexOf('sugartrends-category-id:') === 0)
                 .map(c => c.replace(/^.*:/, ''))
                 .join(',')
             : '';
+          /* eslint-enable */
           const image =
             product.images && product.images.length
               ? hasVariants
-                ? (
+                ? /* eslint-disable indent */
+                  (
                     product.images.find(i =>
                       i.variant_ids.includes(variant.id)
                     ) ||
@@ -52,6 +55,7 @@ module.exports = (source = { products: [] }) => {
                   ).src
                 : (product.images[0] || { src: '' }).src
               : '';
+          /* eslint-enable */
           const item = {
             sku: variant.sku,
             name: hasVariants
