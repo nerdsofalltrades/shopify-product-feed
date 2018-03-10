@@ -45,7 +45,7 @@
   "author": "Sebastian Misch - Nerds of all Trades GmbH",
   "license": "MIT",
   "dependencies": {
-    "micro": "9.1.0",
+    "micro": "9.1.1",
     "micro-ratelimit": "0.3.0",
     "node-fetch": "2.1.0"
   },
