@@ -42,6 +42,9 @@ module.exports = (source = { products: [] }) => {
                 .map(c => c.replace(/^.*:/, ''))
                 .join(',')
             : '';
+          const name = product.vendor
+            ? `${product.vendor} - ${product.title || ''}`
+            : product.title || '';
           /* eslint-enable */
           const image =
             product.images && product.images.length
@@ -58,9 +61,7 @@ module.exports = (source = { products: [] }) => {
           /* eslint-enable */
           const item = {
             sku: variant.sku,
-            name: hasVariants
-              ? `${product.title || ''} - ${variant.title || ''}`
-              : product.title || '',
+            name: hasVariants ? `${name} - ${variant.title || ''}` : name || '',
             description: product.body_html,
             status:
               variant.inventory_quantity && variant.inventory_quantity > 0

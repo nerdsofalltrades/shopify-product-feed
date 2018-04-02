@@ -163,10 +163,10 @@ describe('sugartrends transpiler', () => {
       ]
     }).split(/\n/);
     expect(result[1]).toBe(
-      'sku-1,-,,Disabled,,0,bob,General (use for bulk import products),simple,"Catalog, Search",None,0,,base,admin,,,,,'
+      'sku-1,bob -  -,,Disabled,,0,bob,General (use for bulk import products),simple,"Catalog, Search",None,0,,base,admin,,,,,'
     );
     expect(result[2]).toBe(
-      'sku-2,-,,Disabled,,0,bob,General (use for bulk import products),simple,"Catalog, Search",None,0,,base,admin,,,,,'
+      'sku-2,bob -  -,,Disabled,,0,bob,General (use for bulk import products),simple,"Catalog, Search",None,0,,base,admin,,,,,'
     );
   });
 
