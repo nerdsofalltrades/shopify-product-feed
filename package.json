@@ -45,15 +45,15 @@
   "author": "Sebastian Misch - Nerds of all Trades GmbH",
   "license": "MIT",
   "dependencies": {
-    "micro": "9.2.0",
+    "micro": "9.3.0",
     "micro-ratelimit": "0.3.0",
     "node-fetch": "2.1.2"
   },
   "devDependencies": {
     "eslint-config-xo-react": "0.16.0",
-    "eslint-plugin-flowtype": "2.46.2",
+    "eslint-plugin-flowtype": "2.46.3",
     "eslint-plugin-react": "7.7.0",
-    "jest": "22.1.4",
-    "xo": "0.20.3"
+    "jest": "22.4.3",
+    "xo": "0.21.0"
   }
 }
