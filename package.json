@@ -46,7 +46,7 @@
   "license": "MIT",
   "dependencies": {
     "micro": "9.3.0",
-    "micro-ratelimit": "0.3.0",
+    "micro-ratelimit": "0.4.0",
     "node-fetch": "2.1.2"
   },
   "devDependencies": {
