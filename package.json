@@ -47,7 +47,7 @@
   "dependencies": {
     "micro": "9.3.0",
     "micro-ratelimit": "0.3.0",
-    "node-fetch": "2.1.2"
+    "node-fetch": "2.6.0"
   },
   "devDependencies": {
     "eslint-config-xo-react": "0.16.0",
